@@ -13,6 +13,7 @@ app.get('/users/:id', (req, res) => {
     const { id } = req.params;
     const query = req.query
     console.log(query.test)
+    console.log("test version");
     res.send(`<h1>Helldo User, ${id}</h1>`);
 
 })
