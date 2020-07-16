@@ -11,7 +11,7 @@ const yaml = require('js-yaml')
 try {
     let fileContents = fs.readFileSync('/opt/zigbee2mqtt/data/configuration.yaml', 'utf8');
     let data = yaml.safeLoad(fileContents);
-
+    console.log(data.devices);
     console.log(data);
 } catch (e) {
     console.log(e);
